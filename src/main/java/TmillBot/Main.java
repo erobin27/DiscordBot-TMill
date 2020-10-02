@@ -11,10 +11,10 @@ public class Main {
     private Main() {
         try {
             new JDABuilder(AccountType.BOT)
-                    .setToken("NTk5NTY4NDY1NzA3NDAxMjE3.XSprMQ.StbSx2o6Vet0lAyBcXA_jGUxoVI")
+                    .setToken("secret token")
                     .addEventListener(new Listener())
                     .build()
-                    .getPresence().setGame(Game.playing("with his dick while driving."));
+                    .getPresence().setGame(Game.playing("Tmill Bot."));
         } catch(Exception e) {
             e.printStackTrace();
         }
